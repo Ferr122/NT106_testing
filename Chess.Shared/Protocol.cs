@@ -29,7 +29,7 @@ public sealed class Packet
 public static class Wire
 {
     public static readonly JsonSerializerOptions Options = new() { PropertyNameCaseInsensitive = true };
-    public static string Encode(Packet p) => JsonSerializer.Serialize(p, Options) + "\n";
+    public static string Encode(Packet p) => JsonSerializer.Serialize(p, Options);
     public static Packet? Decode(string line) => JsonSerializer.Deserialize<Packet>(line, Options);
 }
 
