@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Chess.Client/Chess.Client.csproj" />
+  <Project Path="Chess.Server/Chess.Server.csproj" />
+  <Project Path="Chess.Shared/Chess.Shared.csproj" />
+</Solution>
